@@ -19,8 +19,8 @@ class SceneGarden extends Phaser.Scene {
         //this.uiGrid.showNumbers();
 
         this.arrow = this.add.image(this.centerX, this.centerY, 'arrow');
-        this.uiGrid.placeAtIndex(24, this.arrow);
-        Align.scaleToGameW(this.arrow2, .0625);
+        this.uiGrid.placeAtIndex(17, this.arrow);
+        Align.scaleToGameW(this.arrow, .0625);
         this.arrow.setInteractive();
         this.arrow.on('pointerdown', this.enterGraveyard, this);
 

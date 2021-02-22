@@ -19,7 +19,7 @@ window.onload=function() {
             width: 480,
             height: 640,
             parent: 'phaser-game',
-            scene: [SceneLoad, SceneTitle, SceneMain, SceneEntrance, SceneUpstairs, SceneBasement, SceneOver]
+            scene: [SceneLoad, SceneTitle, SceneMain, SceneEntrance, SceneUpstairs, SceneBasement, SceneGarden, SceneGraveyard, SceneOver]
         };
     } else {
         config = {
@@ -27,7 +27,7 @@ window.onload=function() {
             width: window.innerWidth,
             height: window.innerHeight,
             parent: 'phaser-game',
-            scene: [SceneLoad, SceneTitle, SceneMain, SceneEntrance, SceneUpstairs, SceneBasement, SceneOver]
+            scene: [SceneLoad, SceneTitle, SceneMain, SceneEntrance, SceneUpstairs, SceneBasement, SceneGarden, SceneGraveyard, SceneOver]
         };
     }
     G = new Constants();

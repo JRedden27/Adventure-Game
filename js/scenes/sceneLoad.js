@@ -24,6 +24,10 @@ class SceneLoad extends Phaser.Scene {
         this.load.image("basement", "images/basementSketch.jpg");
         this.load.image("garden", "images/gardenSketch.jpg");
         this.load.image("graveyard", "images/graveyardSketch.jpg");
+        this.load.image("attic", "images/atticSketch.jpg");
+        this.load.image("bedroom", "images/bedroomSketch.jpg");
+        this.load.image("bathroom", "images/bathroomSketch.jpg");
+        this.load.image("recRoom", "images/recRoomSketch.jpg");
         this.load.image("arrow", "images/up-arrow.png");
         this.load.image("backArrow", "images/down-arrow.png");
     }

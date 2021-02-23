@@ -18,11 +18,47 @@ class SceneUpstairs extends Phaser.Scene {
         this.uiGrid = new AlignGrid({scene: this, rows: 7, cols: 7});
         //this.uiGrid.showNumbers();
 
+        this.arrow = this.add.image(this.centerX, this.centerY, 'arrow');
+        this.uiGrid.placeAtIndex(21, this.arrow);
+        Align.scaleToGameW(this.arrow, .0625);
+        this.arrow.setInteractive();
+        this.arrow.on('pointerdown', this.enterRecRoom, this);
+
+        this.arrow2 = this.add.image(this.centerX, this.centerY, 'arrow');
+        this.uiGrid.placeAtIndex(16, this.arrow2);
+        Align.scaleToGameW(this.arrow2, .0625);
+        this.arrow2.setInteractive();
+        this.arrow2.on('pointerdown', this.enterBathroom, this);
+
+        this.arrow3 = this.add.image(this.centerX, this.centerY, 'arrow');
+        this.uiGrid.placeAtIndex(18, this.arrow3);
+        Align.scaleToGameW(this.arrow3, .0625);
+        this.arrow3.setInteractive();
+        this.arrow3.on('pointerdown', this.enterBedroom, this);
+
+        this.arrow4 = this.add.image(this.centerX, this.centerY, 'arrow');
+        this.uiGrid.placeAtIndex(3, this.arrow4);
+        Align.scaleToGameW(this.arrow4, .0625);
+        this.arrow4.setInteractive();
+        this.arrow4.on('pointerdown', this.enterAttic, this);
+
         this.backArrow = this.add.image(this.centerX, this.centerY, 'backArrow');
         this.uiGrid.placeAtIndex(38, this.backArrow);
         Align.scaleToGameW(this.backArrow, .0625);
         this.backArrow.setInteractive();
         this.backArrow.on('pointerdown', this.goBack, this);
+    }
+    enterRecRoom() {
+        this.scene.start("SceneRecRoom");
+    }
+    enterBathroom() {
+        this.scene.start("SceneBathroom");
+    }
+    enterBedroom() {
+        this.scene.start("SceneBedroom");
+    }
+    enterAttic() {
+        this.scene.start("SceneAttic");
     }
     goBack() {
         this.scene.start("SceneEntrance");

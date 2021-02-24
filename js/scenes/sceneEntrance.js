@@ -36,6 +36,12 @@ class SceneEntrance extends Phaser.Scene {
         this.arrow3.setInteractive();
         this.arrow3.on('pointerdown', this.enterGarden, this);
 
+        this.arrow4 = this.add.image(this.centerX, this.centerY, 'arrow');
+        this.uiGrid.placeAtIndex(27, this.arrow4);
+        Align.scaleToGameW(this.arrow4, .0625);
+        this.arrow4.setInteractive();
+        this.arrow4.on('pointerdown', this.enterDiningRoom, this);
+
         this.backArrow = this.add.image(this.centerX, this.centerY, 'backArrow');
         this.uiGrid.placeAtIndex(38, this.backArrow);
         Align.scaleToGameW(this.backArrow, .0625);
@@ -50,6 +56,9 @@ class SceneEntrance extends Phaser.Scene {
     }
     enterGarden() {
         this.scene.start("SceneGarden");
+    }
+    enterDiningRoom() {
+        this.scene.start("SceneDiningRoom");
     }
     goBack() {
         this.scene.start("SceneMain");

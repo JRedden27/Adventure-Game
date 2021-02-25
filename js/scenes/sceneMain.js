@@ -22,14 +22,24 @@ class SceneMain extends Phaser.Scene {
         this.uiGrid = new AlignGrid({scene: this, rows: 7, cols: 7});
         //this.uiGrid.showNumbers();
 
-        this.arrow = this.add.image(this.centerX, this.centerY, 'arrow');
-        this.uiGrid.placeAtIndex(31, this.arrow);
-        Align.scaleToGameW(this.arrow, .0625);
-        this.arrow.setInteractive();
-        this.arrow.on('pointerdown', this.enterMainRoom, this);
+        this.frontDoor = this.add.image(this.centerX, this.centerY, 'frontDoor');
+        this.frontDoor.setOrigin(0.67, 0.425);
+        this.uiGrid.placeAtIndex(31, this.frontDoor);
+        Align.scaleWH(this.frontDoor, .25);
+        this.frontDoor.setInteractive();
+        this.frontDoor.on('pointerdown', this.enterMainRoom, this);
+
+        this.key = this.add.image(this.centerX, this.centerY, 'key');
+        this.uiGrid.placeAtIndex(40, this.key);
+        Align.scaleToGameW(this.key, .075);
+        this.key.setInteractive();
+        this.key.on('pointerdown', this.pickUp, this);
     }
     enterMainRoom() {
         this.scene.start("SceneEntrance");
+    }
+    pickUp() {
+
     }
     update() {
         //constant running loop

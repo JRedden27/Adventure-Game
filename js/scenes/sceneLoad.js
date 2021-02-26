@@ -12,6 +12,7 @@ class SceneLoad extends Phaser.Scene {
         this.load.image("button1", "images/ui/buttons/2/1.png");
         this.load.image("button2", "images/ui/buttons/2/5.png");
 
+        this.load.audio('backgroundMusic', ["audio/creepy-music.wav"]);
         this.load.audio('doorOpen', ["audio/door.wav"]);
         this.load.audio('stoneDoorOpen', ["audio/stone-door.wav"]);
         this.load.audio('walkStairs', ["audio/stairs.wav"]);

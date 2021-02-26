@@ -12,6 +12,8 @@ class SceneMain extends Phaser.Scene {
         controller = new Controller();
         mediaManager = new MediaManager({scene: this}); 
 
+        mediaManager.setBackgroundMusic('backgroundMusic');
+
         this.background = this.add.image(0, 0, 'house');
         this.background.setOrigin(0, 0);
         this.background.displayWidth = game.config.width;

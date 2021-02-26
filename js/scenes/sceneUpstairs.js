@@ -49,18 +49,23 @@ class SceneUpstairs extends Phaser.Scene {
         this.backArrow.on('pointerdown', this.goBack, this);
     }
     enterRecRoom() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneRecRoom");
     }
     enterBathroom() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneBathroom");
     }
     enterBedroom() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneBedroom");
     }
     enterAttic() {
+        emitter.emit(G.PLAY_SOUND, "climbLadder");
         this.scene.start("SceneAttic");
     }
     goBack() {
+        emitter.emit(G.PLAY_SOUND, "walkStairs");
         this.scene.start("SceneEntrance");
     }
     update() {

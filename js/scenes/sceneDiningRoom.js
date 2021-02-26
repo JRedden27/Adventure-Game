@@ -31,9 +31,11 @@ class SceneDiningRoom extends Phaser.Scene {
         this.backArrow.on('pointerdown', this.goBack, this);
     }
     enterKitchen() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneKitchen");
     }
     goBack() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneEntrance");
     }
     update() {

@@ -25,6 +25,7 @@ class SceneBasement extends Phaser.Scene {
         this.backArrow.on('pointerdown', this.goBack, this);
     }
     goBack() {
+        emitter.emit(G.PLAY_SOUND, "stoneDoorOpen");
         this.scene.start("SceneEntrance");
     }
     update() {

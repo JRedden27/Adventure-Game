@@ -49,18 +49,23 @@ class SceneEntrance extends Phaser.Scene {
         this.backArrow.on('pointerdown', this.goBack, this);
     }
     enterUpstairs() {
+        emitter.emit(G.PLAY_SOUND, "walkStairs");
         this.scene.start("SceneUpstairs");
     }
     enterBasement() {
+        emitter.emit(G.PLAY_SOUND, "stoneDoorOpen");
         this.scene.start("SceneBasement");
     }
     enterGarden() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneGarden");
     }
     enterDiningRoom() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneDiningRoom");
     }
     goBack() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneMain");
     }
     update() {

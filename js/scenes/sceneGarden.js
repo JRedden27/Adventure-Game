@@ -31,9 +31,11 @@ class SceneGarden extends Phaser.Scene {
         this.backArrow.on('pointerdown', this.goBack, this);
     }
     enterGraveyard() {
+        emitter.emit(G.PLAY_SOUND, "walkOutside");
         this.scene.start("SceneGraveyard");
     }
     goBack() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneEntrance");
     }
     update() {

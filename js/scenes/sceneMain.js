@@ -25,7 +25,7 @@ class SceneMain extends Phaser.Scene {
         this.frontDoor = this.add.image(this.centerX, this.centerY, 'frontDoor');
         this.frontDoor.setOrigin(0.67, 0.425);
         this.uiGrid.placeAtIndex(31, this.frontDoor);
-        Align.scaleWH(this.frontDoor, .25);
+        Align.scaleWH(this.frontDoor, .258);
         this.frontDoor.setInteractive();
         this.frontDoor.on('pointerdown', this.enterMainRoom, this);
 
@@ -33,13 +33,22 @@ class SceneMain extends Phaser.Scene {
         this.uiGrid.placeAtIndex(40, this.key);
         Align.scaleToGameW(this.key, .075);
         this.key.setInteractive();
-        this.key.on('pointerdown', this.pickUp, this);
+        if (!this.text) {
+            this.key.on('pointerdown', this.examine, this);
+        }
     }
     enterMainRoom() {
+        emitter.emit(G.PLAY_SOUND, "doorOpen");
         this.scene.start("SceneEntrance");
     }
-    pickUp() {
-
+    examine() {
+        this.text = this.add.text(this.centerX, this.centerY, "Looks like a key...", {fontSize: game.config.width/25, align: 'center', backgroundColor: 'darkgray', color: 'black'});
+        this.text.setOrigin(-0.5, -2);
+        this.text.setInteractive();
+        this.text.on('pointerdown', this.vanish, this);
+    }
+    vanish() {
+        this.text.destroy();
     }
     update() {
         //constant running loop

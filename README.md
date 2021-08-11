@@ -4,12 +4,12 @@
 
 ___________________________________________________
 
-## Stakeholder Requirements
+## Required Statement
 A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify. All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds. Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.
 
 ___________________________________________________
 
-### SR01: *"A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify."*
+### RS01: *"A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify."*
 
 #### Functional Requirements
 * **F01:** Allow user to play on their browser.
@@ -38,7 +38,7 @@ ___________________________________________________
 
 ___________________________________________________
 
-### SR02: *“All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds.”*
+### RS02: *“All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds.”*
  
 #### Functional Requirements
 * **F03:** Display loading screen
@@ -73,7 +73,7 @@ ___________________________________________________
 
 ___________________________________________________
 
-### SR03: *“Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.”*
+### RS03: *“Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.”*
 
 #### Functional Requirements
 * **F02:** Allow point & click interactivity.
@@ -115,10 +115,10 @@ ___________________________________________________
 
 ## Index
 
-#### Stakeholder Requirements
-* **SR01:** A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify.
-* **SR02:** All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds.
-* **SR03:** Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.
+#### Required Statements
+* **RS01:** A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify.
+* **RS02:** All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds.
+* **RS03:** Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.
 
 #### Functional Requirements
 * **F01:** Allow user to play on their browser.

@@ -1,36 +1,36 @@
-#Haunt and Gather
+# Haunt and Gather
 
 [https://www.hauntandgather.com/](https://www.hauntandgather.com/)
 
 ___________________________________________________
 
-##Stakeholder Requirements
+## Stakeholder Requirements
 A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify. All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds. Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.
 
 ___________________________________________________
 
-###SR01: *"A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify."*
+### SR01: *"A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify."*
 
-####Functional Requirements
+#### Functional Requirements
 * **F01:** Allow user to play on their browser.
 * **F02:** Allow point & click interactivity.
 
-####Informational Components
+#### Informational Components
 * **I01:** Browser type
 * **I02:** User’s OS
 * **I03:** Cursor location
 * **I04:** Selected element
 * **I05:** Type of interaction
 
-####Non-Functional Requirements
+#### Non-Functional Requirements
 
-#####Performance Based
+##### Performance Based
 * **P01:** User should be able to load game within 15 seconds and see progress.
 * **P02:** Seamless response time (for Point & click interactions).
 * **P03:** Game should be optimized for as many browser types and OS’s as possible.
 * **P04:** Game should be optimized for mobile proportions.
 
-#####Constraints
+##### Constraints
 * **C01:** Brower type
 * **C02:** Browser version (support)
 * **C03:** User’s device type
@@ -38,9 +38,9 @@ ___________________________________________________
 
 ___________________________________________________
 
-###SR02: *“All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds.”*
+### SR02: *“All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds.”*
  
-####Functional Requirements
+#### Functional Requirements
 * **F03:** Display loading screen
 * **F04:** Display main screen
 * **F05:** Display backgrounds for each area
@@ -50,21 +50,21 @@ ___________________________________________________
 * **F09:** Play sound effects
 * **F10:** Allow toggling of sound effects
 
-####Informational Components
+#### Informational Components
 * **I05:** Type of interaction (move)
 * **I06:** Image asset
 * **I07:** Audio asset
 * **I08:** Music On/Off status
 * **I09:** SFX On/Off status
 
-####Non-Functional Requirements
+#### Non-Functional Requirements
 
-#####Performance Based
+##### Performance Based
 * **P02:** Seamless response time (for moving between scenes).
 * **P04:** Game should be optimized for mobile proportions (backgrounds).
 * **P05:** Sounds should play at a comfortable level by default.
 
-#####Constraints
+##### Constraints
 * **C01:** Brower type
 * **C02:** Browser version (support)
 * **C03:** User’s device type
@@ -73,9 +73,9 @@ ___________________________________________________
 
 ___________________________________________________
 
-###SR03: *“Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.”*
+### SR03: *“Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.”*
 
-####Functional Requirements
+#### Functional Requirements
 * **F02:** Allow point & click interactivity.
 * **F11:** Allow talking to characters
 * **F12:** Progress dialogue with each click
@@ -86,7 +86,7 @@ ___________________________________________________
 * **F17:** Display inventory
 * **F18:** Allow items to be used on other items / elements
 
-####Informational Components
+#### Informational Components
 * **I03:** Cursor location
 * **I04:** Selected element
 * **I05:** Type of interaction (inspect, talk, pick up, use item on)
@@ -95,13 +95,13 @@ ___________________________________________________
 * **I11:** Game progress (may affect dialogue)
 * **I12:** Inventory contents
 
-####Non-Functional Requirements
+#### Non-Functional Requirements
 
-#####Performance Based
+##### Performance Based
 * **P02:** Seamless response time (for interactions with characters, items, scenery).
 * **P04:** Game should be optimized for mobile proportions (all image assets).
 
-#####Constraints
+##### Constraints
 * **C01:** Brower type
 * **C02:** Browser version (support)
 * **C03:** User’s device type
@@ -113,14 +113,14 @@ ___________________________________________________
 
 
 
-##Index
+## Index
 
-####Stakeholder Requirements
+#### Stakeholder Requirements
 * **SR01:** A browser-based game emulating the style of classic point & click adventure games, created using Phaser 3 and hosted using AWS Amplify.
 * **SR02:** All art, permanent or temporary, is being created by me. Sounds so far are sourced from the Freesound library. Players will be able to explore a haunted mansion and the surrounding grounds.
 * **SR03:** Players will also be able to talk to various characters found therein, pick up items, and examine or interact with notable parts of their surroundings.
 
-####Functional Requirements
+#### Functional Requirements
 * **F01:** Allow user to play on their browser.
 * **F02:** Allow point & click interactivity.
 * **F03:** Display loading screen
@@ -140,7 +140,7 @@ ___________________________________________________
 * **F17:** Display inventory
 * **F18:** Allow items to be used on other items / elements
 
-####Informational Components
+#### Informational Components
 * **I01:** Browser type
 * **I02:** User’s OS
 * **I03:** Cursor location
@@ -154,16 +154,16 @@ ___________________________________________________
 * **I11:** Game progress (may affect dialogue)
 * **I12:** Inventory contents
 
-####Non-Functional Requirements
+#### Non-Functional Requirements
 
-#####Performance Based
+##### Performance Based
 * **P01:** User should be able to load game within 15 seconds and see progress.
 * **P02:** Seamless response time.
 * **P03:** Game should be optimized for as many browser types and OS’s as possible.
 * **P04:** Game should be optimized for mobile proportions.
 * **P05:** Sounds should play at a comfortable level by default.
 
-#####Constraints
+##### Constraints
 * **C01:** Brower type
 * **C02:** Browser version (support)
 * **C03:** User’s device type
